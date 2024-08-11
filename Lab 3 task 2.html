@@ -1,0 +1,225 @@
+
+<html>
+<head>
+<title>CV Submission</title>
+<style>
+body {
+ background-color:#f4f4f4; 
+}
+
+h1 {
+ width:600px;
+ margin:10px auto;
+ padding-bottom:15px;
+ border-bottom:2px solid #007bff;
+ font-size:xx-large;
+ color:#007bff;
+}
+
+/* Begin Form Styles */
+form {
+ width:600px;
+ margin:auto;
+ padding-bottom:20px;
+ color:#007bff;
+}
+
+fieldset {
+ margin-bottom:15px;
+ border-bottom:2px solid #007bff;
+ background-color:#eaf4f4;
+}
+
+legend {
+ padding-left:15px;
+ font-size:1.2em;
+ font-weight:bold;
+ letter-spacing:.5em;
+ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+ font-variant:small-caps;
+ color:#0056b3;
+}
+
+fieldset fieldset {
+ margin-top:15px; 
+ border-bottom:none;
+}
+
+fieldset fieldset legend {
+ font-size:1em;
+ font-weight:bold;
+ letter-spacing:.4em;
+ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+ color:#333;
+}
+
+form ol {
+ padding:20px;
+}
+
+fieldset fieldset ol {
+ margin-top:-10px;
+}
+
+form p {
+ margin:10px;
+ font-size:.8em;
+}
+
+form li {
+ list-style-type:none;
+ border-bottom:1px dotted #000; 
+ padding-bottom:2px;
+ margin-bottom:2px;
+}
+
+label {
+ display:block;
+ width:220px;
+ float:left;
+ font-weight:bold;
+}
+
+span.label {
+ font-weight:bold;
+}
+
+li.radioContainer label {
+ float:none;
+ font-weight:normal;
+}
+
+select, input[type="text"], input[type="email"] {
+ width:220px; 
+}
+
+textarea {
+ width:500px;
+ height:100px;
+}
+
+#buttons {
+ text-align:center; 
+}
+
+#buttons input {
+ height:50px;
+ width:200px;
+ font-size:1.2em;
+ color:#007bff;
+ font-variant:small-caps;
+ margin:10px;
+}
+
+</style>
+</head>
+<body>
+<h1>CV Submission</h1>
+<form method="post" action="submit_cv.asp">
+<fieldset id="personalInfo">
+<legend>Personal Information</legend>
+<ol>
+<li>
+<label for="FullName">Full Name:</label>
+<input type="text" size="20" name="FullName" id="FullName" title="Full Name" />
+</li>
+<li>
+<label for="Address">Street Address:</label>
+<input type="text" size="20" name="Address" id="Address" title="Address" />
+</li>
+<li>
+<label for="City">City:</label>
+<input type="text" size="20" name="City" id="City" title="City" />
+</li>
+<li>
+<label for="State">State:</label>
+<input type="text" size="20" name="State" id="State" title="State" />
+</li>
+<li>
+<label for="PostalCode">Postal Code:</label>
+<input type="text" size="20" name="PostalCode" id="PostalCode" title="Postal Code" />
+</li>
+<li>
+<label for="Telephone">Telephone:</label>
+<input type="text" size="20" name="Telephone" id="Telephone" title="Telephone" />
+</li>
+<li>
+<label for="Email">Email Address:</label>
+<input type="email" size="20" name="Email" id="Email" title="Email Address" />
+</li>
+</ol>
+</fieldset>
+<fieldset id="education">
+<legend>Education</legend>
+<p>List your educational background starting with the most recent.</p>
+<fieldset>
+<legend>Institution 1</legend>
+<ol>
+<li>
+<label for="InstitutionName1">Institution Name:</label>
+<input type="text" size="20" name="InstitutionName1" id="InstitutionName1" title="Institution Name" />
+</li>
+<li>
+<label for="Degree1">Degree:</label>
+<input type="text" size="20" name="Degree1" id="Degree1" title="Degree" />
+</li>
+<li>
+<label for="StartDate1">Start Date:</label>
+<input type="text" size="20" name="StartDate1" id="StartDate1" title="Start Date" />
+</li>
+<li>
+<label for="EndDate1">End Date:</label>
+<input type="text" size="20" name="EndDate1" id="EndDate1" title="End Date" />
+</li>
+<li>
+<label for="Major1">Major:</label>
+<input type="text" size="20" name="Major1" id="Major1" title="Major" />
+</li>
+</ol>
+</fieldset>
+</fieldset>
+<fieldset id="workExperience">
+<legend>Work Experience</legend>
+<p>Provide your work history starting with the most recent job.</p>
+<fieldset>
+<legend>Job 1</legend>
+<ol>
+<li>
+<label for="CompanyName1">Company Name:</label>
+<input type="text" size="20" name="CompanyName1" id="CompanyName1" title="Company Name" />
+</li>
+<li>
+<label for="JobTitle1">Job Title:</label>
+<input type="text" size="20" name="JobTitle1" id="JobTitle1" title="Job Title" />
+</li>
+<li>
+<label for="StartDate1">Start Date:</label>
+<input type="text" size="20" name="StartDate1" id="StartDate1" title="Start Date" />
+</li>
+<li>
+<label for="EndDate1">End Date:</label>
+<input type="text" size="20" name="EndDate1" id="EndDate1" title="End Date" />
+</li>
+<li>
+<label for="Responsibilities1">Responsibilities:</label>
+<textarea name="Responsibilities1" id="Responsibilities1" title="Responsibilities" cols="50" rows="3"></textarea>
+</li>
+<li>
+<label for="Achievements1">Achievements:</label>
+<textarea name="Achievements1" id="Achievements1" title="Achievements" cols="50" rows="3"></textarea>
+</li>
+</ol>
+</fieldset>
+</fieldset>
+<fieldset id="skills">
+<legend>Skills</legend>
+<p>List your skills and qualifications.</p>
+<textarea name="Skills" id="Skills" title="Skills" cols="50" rows="5"></textarea>
+</fieldset>
+<fieldset id="buttons">
+<input type="reset" id="Reset" name="Reset" value="Start Over" />
+<input type="submit" id="Submit" name="Submit" value="Submit" />
+</fieldset>
+</form>
+</body>
+</html>
